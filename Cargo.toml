@@ -1,0 +1,8 @@
+[package]
+name = "atcoder_test"
+version = "0.1.0"
+authors = ["HiraokaTakuya <hiraoka64@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+reqwest = "*"

@@ -5,4 +5,4 @@ authors = ["HiraokaTakuya <hiraoka64@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-reqwest = "*"
+reqwest = "0.9.12"

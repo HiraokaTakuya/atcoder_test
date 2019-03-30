@@ -4,12 +4,16 @@ RustでAtCoderの問題を解く際に、コンパイルとサンプルの入出
 
 install
 
+```bash
 $ git clone path-to-this-repository atcoder_test
 $ cd atcoder_test && cargo install --path .
+```
 
 uninstall
 
+```bash
 $ cargo uninstall atcoder_test
+```
 
 usage
 
@@ -27,7 +31,9 @@ abcxxx
 
 例として、ABC121のA問題のテストを行う際には以下のようにします。
 
+```bash
 $ atcoder_test abc121 a
+```
 
 コンテスト名の"abc121"の部分はと問題名"a"の部分は、問題のURLの生成にも使用します。
 コンテスト用のプログラムはdebugモードでコンパイルと実行を行います。

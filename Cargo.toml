@@ -1,8 +1,8 @@
 [package]
 name = "atcoder_test"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["HiraokaTakuya <hiraoka64@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-reqwest = "0.9.12"
+reqwest = { version = "0.11.10", features = ["blocking"] }

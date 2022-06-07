@@ -1,5 +1,3 @@
-extern crate reqwest;
-
 use std::io::prelude::*;
 use std::process::{Command, Stdio};
 
@@ -46,7 +44,7 @@ fn main() {
             "https://atcoder.jp/contests/{0}/tasks/{0}_{1}",
             args[1], args[2]
         );
-        let mut res = reqwest::get(&url).expect(&format!("Can't get from {}", url));
+        let res = reqwest::blocking::get(&url).expect(&format!("Can't get from {}", url));
         let body = res.text().unwrap();
         if body.contains(r"<title>404 Not Found - AtCoder</title>") {
             eprintln!("The URL is not found.\nURL: {}", url);
